@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Silent Assassin | Offical Store </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/f74c77aa8d.js" crossorigin="anonymous"></script>
+    
+    
+    </head>
+    
+<body>
+    
+    
+    <div class="header">
+    
+   
+    <div class="container">
+     
+    <div class="navbar">
+   <div class="logo">
+       <img src="hi.png" width="150px" height="150px">
+        <div class="content">
+        <p></p>
+            <h1>Black <span>Friday</span> Sale</h1>
+            <div class="Sale-Period">
+            <div>
+                <p id="days">00</p>
+                <span>Days</span>
+                </div>
+                <div>
+                <p id="hours">00</p>
+                <span>Hours</span>
+                </div>
+                <div>
+                <p id="minutes">00</p>
+                <span>Minutes</span>
+                </div>
+                <div>
+                <p id="seconds">00</p>
+                <span>Seconds</span>
+                </div>
+            </div>
+           
+        </div>
+        
+        </div>
+     <script> 
+         var countDownDate =new Date("December 1, 2022 00:00:00").getTime();
+         var x = setInterval(function(){
+             var now = new Date().getTime();
+             var distance = countDownDate - now;
+             
+             var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+             
+             document.getElementById("days").innerHTML = days;
+              document.getElementById("hours").innerHTML = hours;
+              document.getElementById("minutes").innerHTML = minutes;
+              document.getElementById("seconds").innerHTML = seconds;
+             
+             if(distance < 0){
+                 clearInterval(x);
+                  document.getElementById("days").innerHTML = "00";
+              document.getElementById("hours").innerHTML = "00";
+              document.getElementById("minutes").innerHTML = "00";
+              document.getElementById("seconds").innerHTML = "00";
+                 
+                 
+             }
+
+             
+             
+             
+             
+             
+             
+             
+             
+         },1000);
+         
+        </script>
+       
+        
+        
+        
+        
+        <nav>
+        
+        <ul id="MenuItems">
+            <li><a href="">Home</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Account</a></li>
+        </ul>
+        </nav>
+        <img src="shopping-bag.png" width="30px" height="30px">
+        <img src="icons8-menu-rounded-50.png" class="menu-icon" onclick="menutoggle()">
+    
+    
+    </div>
+        <div class="row">
+            <div class="col-2">
+        <h1>Wear With Style</h1>
+            <p>Our range has it all. No matter what you are buying for; from showing-off to a collection - enjoy clothing with a passion</p>
+            <a href="" class="btn">Explore Now   &#8594;</a>
+        </div>
+       <div  class="col-2"> 
+          <img src="model2.png" width="900px">  
+            </div>
+             <div  class="col-2"> 
+          <img src="model1.png" width="900px" >  
+            </div>
+        
+            </div>
+            </div>
+         </div>
+    
+    <!-------- featured categories ------->
+    
+    <div class="categories">
+       <div class="small-container">
+        <div class="row">
+        <div class="col-3">
+            <img src="aaa.jpg">
+            </div>
+            <div class="col-3">
+            <img src="aaa.jpg">
+            </div>
+            <div class="col-3">
+            <img src="aaa.jpg">
+            </div>
+       
+        </div>
+         </div>
+    </div>
+            
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+      <div class="row">
+        <div class="col-4">
+          <img src="aaa.jpg" width="200">
+            <h4>MALE HOODIES</h4>
+            <div class="rating">
+    <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <P>$39.99</P>
+          </div>
+          <div class="col-4">
+          <img src="lol.jpg" width="200">
+            <h4>MALE SHORTS</h4>
+            <div class="rating">
+    <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <P>$29.99</P>
+         
+        </div> 
+          <div class="col-4">
+          <img src="aaa.jpg" width="200px">
+            <h4>MALE JOGGERS</h4>
+            <div class="rating">
+    <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <P>$49.99</P>
+          </div>
+    </div>
+    <h2 class="title">Latest Products</h2>
+    </div>
+     <div class="row">
+        <div class="col-4">
+          <img src="aaa.jpg" width="200">
+            <h4>MALE HOODIES</h4>
+            <div class="rating">
+    <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <P>$39.99</P>
+          </div>
+          <div class="col-4">
+          <img src="lol.jpg" width="200">
+            <h4>MALE SHORTS</h4>
+            <div class="rating">
+    <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <P>$29.99</P>
+         
+        </div> 
+          <div class="col-4">
+          <img src="aaa.jpg" width="200px">
+            <h4>MALE JOGGERS</h4>
+            <div class="rating">
+    <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <P>$49.99</P>
+          </div>
+          <div class="row">
+        <div class="col-4">
+          <img src="aaa.jpg" width="200">
+            <h4>MALE HOODIES</h4>
+            <div class="rating">
+    <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <P>$39.99</P>
+          </div>
+          <div class="col-4">
+          <img src="lol.jpg" width="200">
+            <h4>MALE SHORTS</h4>
+            <div class="rating">
+    <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <P>$29.99 - OUT OF STOCK</P>
+         
+        </div> 
+          <div class="col-4">
+          <img src="aaa.jpg" width="200px">
+            <h4>MALE JOGGERS</h4>
+            <div class="rating">
+    <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <P>$49.99 - OUT OF STOCK</P>
+          </div>
+    </div>
+    </div>
+    
+    <div class="offer">
+    <div class="small-container">
+        <div class="row">
+        <div class="col-2">
+            <img src="aaa.jpg" class="offer-img">
+             </div>
+        <div class="col-2">
+            <p>Exclusively Available at Silent Assassin</p>
+            <h1>Exclusive Set 2</h1>
+            <small>Our best ever design yet. Made with the best natural cotton, our product tops the game.</small>
+            <a ref="" class="btn">Buy Now &#8594;</a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    
+    <div class="Reviews">
+    <div class="small-container">
+        <div class="row">
+        <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>Probably one of the greatest streetwear designs I've seen in my life.</p>
+          <div class="Reviews">
+    <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <h3>Suhail Ahmed</h3>
+            
+            </div>
+             <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>Wasnt expecting much but this brand is so unique with its style, defo a buy.</p>
+          <div class="Reviews">
+    <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <h3>Yasin Begh</h3>
+            
+            </div>
+             <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>Most unique designs plus good quality, tell ur friends abt it, underrated.</p>
+          <div class="Reviews">
+    <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <h3>Emiko Uvawa</h3>
+            
+            </div>
+        </div>
+        </div>
+    </div>
+ <div class="brands">  
+<div class="small-container">
+     <div class="row">
+<div class="col-5">
+        
+         <img src="" width="100px">
+     </div>
+         <div class="col-5">
+        
+         <img src="" width=100px>
+     </div>
+         <div class="col-5">
+        
+         <img src="" width=150px>
+     </div>
+         <div class="col-5">
+        
+         <img src="" width="100px">
+     </div>
+    </div>
+     </div>
+    </div> 
+    
+    
+    
+    <div class="footer">
+    <div class="container">
+        <div class="row">
+        <div class="footer-col-1">
+            <h3> Download Our App</h3>
+            <p>Download Our App for IOS and Andriod devices.</p>
+         <div class="app-logo">
+            <img src="" width="200px">
+              <img src="4111112apple-app-store-travel-awards-globestamp-7.png" width="130px">
+            </div>
+            
+            
+            </div>
+        
+            <div class="footer-col-2">
+            <img src="">
+            <p></p>
+        </div>
+        <div class="footer-col-3">
+            <h3>Links</h3>
+           <ul>
+        <li>Promo Codes</li>
+               <li>Return Policy</li>
+               <li>Work For Us</li>
+              
+       
+        </ul>
+        </div>
+          
+        <div class="footer-col-4">
+            <h3>Follow Us</h3>
+            <ul>
+            <li>Instagram</li>
+                <li>Facebook</li>
+                <li>TikTok</li>
+            </ul>
+        </div>
+        
+    </div>
+        <hr>
+        <p class="Copyright">2022 Silent Asssasin - All rights reserved </p>
+        </div>
+    </div>
+    
+    
+
+    <script>
+    var MenuItems = document.getElementById("MenuItems");
+        
+        MenuItems.style.maxHeight = "0px";
+        
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+        {
+                
+                    MenuItems.style.maxHeight = "200px";
+                }
+            else
+                {
+                   MenuItems.style.maxHeight = "0px";   
+                }
+        }
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </body>
+</html>
+    
+      
+        
+    
+    
+    
+    
+    
+    
